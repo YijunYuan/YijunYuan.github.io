@@ -15,7 +15,9 @@
   margin-right:1rem}
 
 @media (prefers-color-scheme: dark) { .social-icons a {color: #3eb7f0 !important; }}
-
+.katex {
+  font-size: 1em !important;
+}
 .social-icons a:last-child{margin-right:0}.social-icons a:hover{background-color:white;
     color:black;
     transform: scale(1.2)}
@@ -94,6 +96,9 @@
 .twitter span{
   background-color:#4099ff}
 
+.orcid span{
+  background-color:#A6CE39}  
+
 .facebook span{
   background-color:#4286f4}
 
@@ -104,7 +109,7 @@
   background-color:#000}
 
 email {
-    font-size: 14px;
+    font-size: 18px;
     font-family: "Ubuntu Mono";
 }
 
@@ -126,6 +131,9 @@ email {
 .icon-button .icon-twitter{
   color:#4099ff}
 
+.icon-button .icon-orcid{
+    color:#A6CE39}
+
 .icon-button .icon-facebook{
   color:#4286f4}
 
@@ -135,7 +143,7 @@ email {
 .icon-button .icon-linkedin{
   color:#0077B5}
 
-.icon-button:hover .icon-twitter,.icon-button:hover .icon-facebook,.icon-button:hover .icon-github,.icon-button:hover .icon-linkedin{color:white}
+.icon-button:hover .icon-twitter,.icon-button:hover .icon-orcid,.icon-button:hover .icon-facebook,.icon-button:hover .icon-github,.icon-button:hover .icon-linkedin{color:white}
 
 autocolor{
   color:#595959;
@@ -184,7 +192,7 @@ papertitle {
 
 
   .image {
-    border-radius: 0.35em;
+    border-radius: 0;
     border: 0;
     display: inline-block;
     position: relative;
@@ -195,7 +203,7 @@ papertitle {
       -webkit-transition: opacity 0.2s ease-in-out;
       -ms-transition: opacity 0.2s ease-in-out;
       transition: opacity 0.2s ease-in-out;
-      border-radius: 0.35em;
+      border-radius: 0;
       content: '';
       display: block;
       height: 100%;
@@ -207,7 +215,7 @@ papertitle {
     }
 
     .image.avatar {
-      border-radius: 100%;
+      border-radius: 0;
     }
 
       .image.avatar:before {
@@ -215,8 +223,8 @@ papertitle {
       }
 
       .image.avatar img {
-        border-radius: 100%;
-        width: 45%;
+        border-radius: 0;
+        width: 80%;
         padding: 20px;
         // border: 1px solid #ddd;
         // padding: 3px;
@@ -499,7 +507,7 @@ footer {
 
 
    .image.avatar img {
-        border-radius: 100%;
+        border-radius: 0;
         width: 117px;
         padding:20px;
       }
@@ -555,7 +563,7 @@ footer {
   }
 
   .image.avatar img {
-      border-radius: 100%;
+      border-radius: 0;
       width: 95px;
       padding:20px;
   }
