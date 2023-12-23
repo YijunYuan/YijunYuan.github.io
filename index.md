@@ -3,7 +3,7 @@ layout: homepage
 ---
 
 ## About Me
-I’m Yijun **Yuan** (**袁** 轶君 in Chinese), a Ph.D student at Yau Mathematical Sciences Center, Tsinghua University.
+I’m Yijun **Yuan** (**袁** 轶君 in Chinese), a Ph.D student at Yau Mathematical Sciences Center, Tsinghua University. I major in algebraic number theory and arithmetic geometry.
 
 ## Research Interests
 - **$$p$$-adic Galois representations:** especially the theory of $$(\varphi,\Gamma)$$-modules
