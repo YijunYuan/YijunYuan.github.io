@@ -12,7 +12,7 @@ I’m Yijun **Yuan** (**袁** 轶君 in Chinese), a Ph.D student at Yau Mathemat
 - **arithmetic properties of combinatorial functions**
 
 ## Curriculum Vitae
-- 2023.9 - 2025.6(expected) Ph.D.\
+- 2022.9 - 2025.6(expected) Ph.D.\
 Yau Mathematical Sciences Center, Tsinghua University.\
 Advisor: [Lei Fu](https://ymsc.tsinghua.edu.cn/en/info/1031/1888.htm)
 Former advisor: [Haoran Wang](https://www.mathgenealogy.org/id.php?id=177851)
