@@ -36,13 +36,13 @@ Advisor: [Guodong Zhou](https://math.ecnu.edu.cn/~gdzhou/intro.html)
 (*Corresponding author)
 
 ## Talks
-- Arithmetic of spherically complete valued fields in mixed characteristic\\
+- **Arithmetic of spherically complete valued fields in mixed characteristic**\\
 Symposium on Number Theory and Algebraic Geometry of Spring 2025, at Capital Normal University, 2025, June 13th
-- Hyper-algebraic invariants of $$p$$-adic algebraic numbers\\
+- **Hyper-algebraic invariants of $$p$$-adic algebraic numbers**\\
 Second Doctoral Conference on Frontiers of Mathematics at School of Mathematical Sciences, Peking University, 2024, Nov. 1st
-- Arithmetic of $$p$$-adic Mal’cev-Neumann field\\
+- **Arithmetic of $$p$$-adic Mal’cev-Neumann field**\\
 Number Theory Launch Seminar at Beijing Institute of Mathematical Sciences and Applications (BIMSA), 2024, Oct. 16th
-- $$(\varphi, \Gamma)$$-modules for $$p$$-adic false Tate curve extension\\
+- **$$(\varphi, \Gamma)$$-modules for $$p$$-adic false Tate curve extension**\\
 0-1 Seminar at Department of Mathematical Sciences, Tsinghua University, 2023, Sep. 27th
 
 ## Teaching
