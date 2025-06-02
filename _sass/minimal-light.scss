@@ -365,11 +365,13 @@ img {
 
 header {
   width:232px;
-  float:left;
   position:fixed;
+  top: 0;
+  bottom: 0;
   -webkit-font-smoothing:subpixel-antialiased;
-  padding-top:4.0em;
-  text-align:center
+  padding-top:1.5em;
+  text-align:center;
+  overflow-y: auto; /* Shows scrollbar only when content overflows */
 }
 
 
