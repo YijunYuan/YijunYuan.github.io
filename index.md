@@ -28,6 +28,7 @@ School of Mathematical Sciences, East China Normal University\
 Advisor: [Guodong Zhou](https://math.ecnu.edu.cn/~gdzhou/intro.html)
 
 ## Papers
+- Multivariable period rings of $$p$$-adic false Tate curve extension. **Yijun Yuan***. [	arXiv:2505.24064 [math.NT]](https://arxiv.org/abs/2505.24064)
 - Hyper-algebraic invariants of $$p$$-adic algebraic numbers. Shanwen Wang, **Yijun Yuan***. [arXiv:2402.15947 [math.NT]](https://arxiv.org/abs/2402.15947)
 - Truncated expansion of $$\zeta_{p^n}$$ in the $$p$$-adic Mal'cev-Neumann field. Shanwen Wang, **Yijun Yuan***. [arXiv:2111.07127 [math.NT]](https://arxiv.org/abs/2111.07127)
 - Uniformizer of the false Tate curve extension of $$\mathbb{Q}_p$$ (II). *International Journal of Number Theory*, 2023. Shanwen Wang, **Yijun Yuan***. DOI:[10.1142/S1793042124500015](https://doi.org/10.1142/S1793042124500015)
