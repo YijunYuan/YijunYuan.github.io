@@ -365,7 +365,7 @@ img {
 
 header {
   width:232px;
-  /* float:left; is ignored for position:fixed elements */
+  float:left;
   position:fixed;
   top: 0; /* Explicitly set top position */
   left: 0; /* Explicitly set left position for a sidebar */
@@ -376,7 +376,7 @@ header {
      Adjust this value if your footer's actual height or desired clearance is different. */
   padding-bottom: 60px;
   text-align:center;
-  overflow-y: auto; /* Enable vertical scrollbar when content overflows */
+  overflow-y: scroll; /* Enable vertical scrollbar when content overflows */
   /* Set max-height for the content area.
      The total height of the header element will be:
      max-height + padding-top + padding-bottom
