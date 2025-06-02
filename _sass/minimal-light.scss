@@ -367,22 +367,9 @@ header {
   width:232px;
   float:left;
   position:fixed;
-  top: 0; /* Explicitly set top position */
-  left: 0; /* Explicitly set left position for a sidebar */
   -webkit-font-smoothing:subpixel-antialiased;
-  padding-top:2.0em;
-  /* Add padding to the bottom of the header's content.
-     This value (60px) is an estimate: 30px for assumed footer height + 30px for footer's 'bottom' offset.
-     Adjust this value if your footer's actual height or desired clearance is different. */
-  padding-bottom: 60px;
-  text-align:center;
-  overflow-y: scroll; /* Enable vertical scrollbar when content overflows */
-  /* Set max-height for the content area.
-     The total height of the header element will be:
-     max-height + padding-top + padding-bottom
-     = (100vh - 4.0em - 60px) + 4.0em + 60px = 100vh.
-     This makes the header box 100vh tall. Content scrolls within this box. */
-  max-height: calc(100vh - 2.0em - 60px);
+  padding-top:4.0em;
+  text-align:center
 }
 
 
