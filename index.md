@@ -19,7 +19,7 @@ Supervisor: [Huayi Chen](https://chenhuayi.lab.westlake.edu.cn/)
 Yau Mathematical Sciences Center, Tsinghua University.\
 Advisor: [Lei Fu](https://ymsc.tsinghua.edu.cn/en/info/1031/1888.htm)
 Former advisor: [Haoran Wang](https://www.mathgenealogy.org/id.php?id=177851)
-- 2018.9 - 2021.6 Ms.D.\
+- 2018.9 - 2021.6 MSc\
 Shanghai Center for Mathematical Sciences, Fudan University\
 Advisor 1: [Quanshui Wu](https://scms.fudan.edu.cn/info/2459/2712.htm)
 Advisor 2: [Shanwen Wang](http://math.ruc.edu.cn/ywb/Faculty/Inserviceteacher/AssociateProfessor/58479b66a01640068876c2262b6e3c9c.htm)
