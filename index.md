@@ -39,7 +39,7 @@ Advisor: [Guodong Zhou](https://math.ecnu.edu.cn/~gdzhou/intro.html)
 
 (*Corresponding author)
 
-## 🎙Talks
+## 🎙️Talks
 - **Arithmetic of spherically complete valued fields in mixed characteristic**\\
 *Symposium on Number Theory and Algebraic Geometry of Spring 2025*\\
 Capital Normal University, 2025, June 13th
