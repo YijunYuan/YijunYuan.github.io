@@ -29,6 +29,7 @@ Advisor: [Guodong Zhou](https://math.ecnu.edu.cn/~gdzhou/intro.html)
 
 ## 📓Papers
 #### Preprints
+- Descent of $$(\varphi,\tau)$$-modules in characteristic $$p$$. [arXiv:2511.17029 [math.NT]](https://arxiv.org/abs/2511.17029)
 - On the $$p$$-adic transcendence of $$\sum_{k=1}^\infty p^{-1/p^k}$$. Shanwen Wang, **Yijun Yuan***. [arXiv:2509.24609 [math.NT]](https://arxiv.org/abs/2509.24609)
 - Formalization of Harder-Narasimhan theory. **Yijun Yuan***. [arXiv:2509.19632 [math.AG]](https://arxiv.org/abs/2509.19632) [GitHub repo](https://github.com/YijunYuan/HarderNarasimhan)
 - Multivariable period rings of $$p$$-adic false Tate curve extension. **Yijun Yuan***. [arXiv:2505.24064 [math.NT]](https://arxiv.org/abs/2505.24064)
@@ -42,6 +43,8 @@ Advisor: [Guodong Zhou](https://math.ecnu.edu.cn/~gdzhou/intro.html)
 (*Corresponding author)
 
 ## 🎙Talks
+- **Formalization of Harder-Narasimhan Theorey**\\
+Shanghai Institute for Mathematics and Interdisciplinary Sciences, 2025, Nov. 19th
 - **Arithmetic of spherically complete valued fields in mixed characteristic**\\
 *Symposium on Number Theory and Algebraic Geometry of Spring 2025*\\
 Capital Normal University, 2025, June 13th
