@@ -11,10 +11,12 @@ I’m Yijun **Yuan** (**袁** 轶君 in Chinese), a Postdoctoral Fellow at Insti
 - **$$p$$-adic analysis**
 - **Formalization of math [(Lean 4)](https://lean-lang.org/)**
 
-## 👔Curriculum Vitae
+## 👔Employment
 - 2025.7 - 2027.6 Postdoctoral Fellow\
 Institute of Theoretical Sciences, Westlake University.\
 Supervisor: [Huayi Chen](https://chenhuayi.lab.westlake.edu.cn/)
+
+## 🎓Education
 - 2022.9 - 2025.6 Ph.D.\
 Yau Mathematical Sciences Center, Tsinghua University.\
 Advisor: [Lei Fu](https://ymsc.tsinghua.edu.cn/en/info/1031/1888.htm)
