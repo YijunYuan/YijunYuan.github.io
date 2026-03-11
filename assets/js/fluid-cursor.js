@@ -3,6 +3,32 @@ const useFluidCursor = () => {
   const canvas = document.getElementById('fluid');
   resizeCanvas();
 
+  const lightPalette = {
+    background: { r: 0.05, g: 0.1, b: 0.2 },
+    fluid: { r: 0.04, g: 0.12, b: 0.32 },
+  };
+
+  function invertColor(color, scale) {
+    return {
+      r: (1 - color.r) * scale,
+      g: (1 - color.g) * scale,
+      b: (1 - color.b) * scale,
+    };
+  }
+
+  function getThemePalette() {
+    const isDarkMode =
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (!isDarkMode) return lightPalette;
+
+    return {
+      background: invertColor(lightPalette.background, 0.16),
+      fluid: invertColor(lightPalette.fluid, 0.12),
+    };
+  }
+
   //try to adjust settings
 
   let config = {
@@ -15,13 +41,21 @@ const useFluidCursor = () => {
     PRESSURE_ITERATIONS: 20,
     CURL: 3,
     SPLAT_RADIUS: 0.2,
-    SPLAT_FORCE: 6000,
+    SPLAT_FORCE: 4200,
     SHADING: true,
     COLOR_UPDATE_SPEED: 10,
     PAUSED: false,
-    BACK_COLOR: { r: 0.5, g: 0, b: 0 },
+    BACK_COLOR: getThemePalette().background,
     TRANSPARENT: true,
   };
+
+  if (window.matchMedia) {
+    window
+      .matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', () => {
+        config.BACK_COLOR = getThemePalette().background;
+      });
+  }
 
   function pointerPrototype() {
     this.id = -1;
@@ -1090,9 +1124,9 @@ const useFluidCursor = () => {
 
   function clickSplat(pointer) {
     const color = generateColor();
-    color.r *= 10.0;
-    color.g *= 10.0;
-    color.b *= 10.0;
+    color.r *= 4.0;
+    color.g *= 4.0;
+    color.b *= 4.0;
     let dx = 10 * (Math.random() - 0.5);
     let dy = 30 * (Math.random() - 0.5);
     splat(pointer.texcoordX, pointer.texcoordY, dx, dy, color);
@@ -1251,11 +1285,13 @@ const useFluidCursor = () => {
   }
 
   function generateColor() {
-    let c = HSVtoRGB(Math.random(), 1.0, 1.0);
-    c.r *= 0.15;
-    c.g *= 0.15;
-    c.b *= 0.15;
-    return c;
+    const intensity = 0.5 + Math.random() * 0.18;
+    const palette = getThemePalette();
+    return {
+      r: palette.fluid.r * intensity,
+      g: palette.fluid.g * intensity,
+      b: palette.fluid.b * intensity,
+    };
   }
 
   function HSVtoRGB(h, s, v) {
