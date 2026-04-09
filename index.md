@@ -46,6 +46,11 @@ Advisor: [Guodong Zhou](https://math.ecnu.edu.cn/~gdzhou/intro.html)
 (*Corresponding author)
 
 ## 🎙Talks
+- **Formalization of Non-Archimedean Functional Analysis**\\
+School of Mathematical Sciences, East China Normal University, 2026, Apr. 9th
+- **Formalization of Non-Archimedean Functional Analysis**\\
+*AI for Mathematics @ SIMIS*\\
+Shanghai Institute for Mathematics and Interdisciplinary Sciences, 2026, Apr. 7th
 - **Formalization of Harder-Narasimhan Theorey**\\
 Shanghai Institute for Mathematics and Interdisciplinary Sciences, 2025, Nov. 19th
 - **Arithmetic of spherically complete valued fields in mixed characteristic**\\
