@@ -46,6 +46,12 @@ Advisor: [Guodong Zhou](https://math.ecnu.edu.cn/~gdzhou/intro.html)
 (*Corresponding author)
 
 ## 🎙Talks
+- **On the algebraicity of $$p$$-adic Hahn series**\\
+*Jinling (金陵) Conference on Number Theory and Arithmetic Geometry*\\
+Nanjing University, 2026, Apr. 17th
+- **Formalization of Non-Archimedean Functional Analysis**\\
+*Workshop on Formalized Mathematics*\\
+Yau Mathematical Sciences Center, Tsinghua University, 2026, Apr. 16th
 - **Formalization of Non-Archimedean Functional Analysis**\\
 School of Mathematical Sciences, East China Normal University, 2026, Apr. 9th
 - **Formalization of Non-Archimedean Functional Analysis**\\
