@@ -1,3 +1,33 @@
+/*
+ * A quiet water-surface photograph gives the translucent cards something to
+ * refract without competing with the page content.
+ * Source: https://images.unsplash.com/photo-1518837695005-2083093ee35b
+ */
+body {
+  background-color: #f7fafc;
+  isolation: isolate;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -12px;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(247, 250, 252, 0.7), rgba(247, 250, 252, 0.7)),
+    url("../img/glass-surface-background.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: saturate(0.78) blur(1px);
+  transform: scale(1.01);
+  pointer-events: none;
+}
+
+body > .wrapper {
+  position: relative;
+  z-index: 1;
+}
+
 .homepage-content ul {
   --reveal-hue: 200;
 
@@ -20,7 +50,18 @@
   padding: 12px 15px;
   border-radius: 14px;
   background-color: hsla(var(--reveal-hue), 65%, 65%, 0.08);
-  box-shadow: 0 1px 3px hsla(var(--reveal-hue), 45%, 28%, 0.025);
+  background-image: linear-gradient(
+    135deg,
+    hsla(var(--reveal-hue), 88%, 94%, 0.25),
+    hsla(var(--reveal-hue), 68%, 70%, 0.09) 55%,
+    hsla(var(--reveal-hue), 58%, 48%, 0.065)
+  );
+  -webkit-backdrop-filter: blur(12px) saturate(115%);
+  backdrop-filter: blur(12px) saturate(115%);
+  box-shadow:
+    0 8px 22px hsla(var(--reveal-hue), 45%, 28%, 0.07),
+    0 2px 6px hsla(var(--reveal-hue), 45%, 28%, 0.045),
+    inset 0 10px 24px rgba(255, 255, 255, 0.035);
   transform: perspective(950px)
     rotateX(var(--reveal-rotate-x))
     rotateY(var(--reveal-rotate-y))
@@ -32,6 +73,14 @@
     background-color 220ms ease,
     box-shadow 220ms ease;
   will-change: transform;
+}
+
+.homepage-content ul > li:nth-child(3n + 1) {
+  border-radius: 14px 18px 16px 21px;
+}
+
+.homepage-content ul > li:nth-child(3n + 2) {
+  border-radius: 18px 14px 21px 16px;
 }
 
 .homepage-content ul > li::before {
@@ -51,10 +100,32 @@
   transition: opacity 240ms ease;
 }
 
+.homepage-content ul > li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(
+    132deg,
+    rgba(255, 255, 255, 0.16),
+    transparent 38%,
+    transparent 74%,
+    rgba(255, 255, 255, 0.035)
+  );
+  pointer-events: none;
+}
+
 .homepage-content ul > li:hover,
 .homepage-content ul > li:focus-within {
   --reveal-scale: 1.006;
   background-color: hsla(var(--reveal-hue), 72%, 63%, 0.13);
+  background-image: linear-gradient(
+    135deg,
+    hsla(var(--reveal-hue), 92%, 96%, 0.34),
+    hsla(var(--reveal-hue), 72%, 67%, 0.13) 55%,
+    hsla(var(--reveal-hue), 62%, 46%, 0.085)
+  );
   box-shadow:
     0 10px 28px hsla(var(--reveal-hue), 58%, 38%, 0.1),
     0 2px 7px hsla(var(--reveal-hue), 58%, 38%, 0.065);
@@ -74,9 +145,28 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  body.auto-dark-mode {
+    background-color: #20212b;
+  }
+
+  body.auto-dark-mode::before {
+    background-image:
+      linear-gradient(rgba(32, 33, 43, 0.8), rgba(32, 33, 43, 0.8)),
+      url("../img/glass-surface-background.jpg");
+  }
+
   body.auto-dark-mode .homepage-content ul > li {
     background-color: hsla(var(--reveal-hue), 74%, 74%, 0.05);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-image: linear-gradient(
+      135deg,
+      hsla(var(--reveal-hue), 74%, 80%, 0.12),
+      hsla(var(--reveal-hue), 68%, 58%, 0.055) 55%,
+      hsla(var(--reveal-hue), 58%, 38%, 0.045)
+    );
+    box-shadow:
+      0 8px 22px rgba(0, 0, 0, 0.13),
+      0 2px 6px rgba(0, 0, 0, 0.08),
+      inset 0 10px 24px rgba(255, 255, 255, 0.025);
   }
 
   body.auto-dark-mode .homepage-content ul > li::before {
@@ -88,9 +178,25 @@
     );
   }
 
+  body.auto-dark-mode .homepage-content ul > li::after {
+    background: linear-gradient(
+      132deg,
+      rgba(255, 255, 255, 0.1),
+      transparent 38%,
+      transparent 74%,
+      rgba(255, 255, 255, 0.02)
+    );
+  }
+
   body.auto-dark-mode .homepage-content ul > li:hover,
   body.auto-dark-mode .homepage-content ul > li:focus-within {
     background-color: hsla(var(--reveal-hue), 78%, 68%, 0.085);
+    background-image: linear-gradient(
+      135deg,
+      hsla(var(--reveal-hue), 80%, 82%, 0.18),
+      hsla(var(--reveal-hue), 74%, 62%, 0.075) 55%,
+      hsla(var(--reveal-hue), 64%, 42%, 0.06)
+    );
     box-shadow:
       0 12px 30px rgba(0, 0, 0, 0.18),
       0 0 18px hsla(var(--reveal-hue), 82%, 66%, 0.065);
