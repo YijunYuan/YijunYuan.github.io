@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
     
     {% endif %}
+    <link rel="stylesheet" href="{{ "/assets/css/reveal-highlight.css" | relative_url }}">
     <!--KaTeX-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
@@ -45,7 +46,7 @@
       });
   </script>
   </head>
-  <body>
+  <body{% if site.auto_dark_mode %} class="auto-dark-mode"{% endif %}>
     <div class="wrapper">
       <header>
         {% if site.avatar %}
@@ -124,7 +125,7 @@
         <a href="https://raw.githubusercontent.com/YijunYuan/cv/master/cv.pdf">💾Download CV [PDF]</a>
         </div>
       </header>
-      <section>
+      <section class="homepage-content">
 
       {{ content }}
 
@@ -140,7 +141,7 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script src="{{ "/assets/js/fluid-cursor.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/reveal-highlight.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
