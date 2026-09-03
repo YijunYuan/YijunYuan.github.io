@@ -1,26 +1,22 @@
-/*
- * A quiet water-surface photograph gives the translucent cards something to
- * refract without competing with the page content.
- * Source: https://images.unsplash.com/photo-1518837695005-2083093ee35b
- */
+/* Keep a calm fallback visible while the decorative Fog canvas loads. */
 body {
   background-color: #f7fafc;
   isolation: isolate;
 }
 
-body::before {
-  content: "";
+#vanta-fog {
   position: fixed;
-  inset: -12px;
+  inset: 0;
   z-index: 0;
-  background-image:
-    linear-gradient(rgba(247, 250, 252, 0.7), rgba(247, 250, 252, 0.7)),
-    url("../img/glass-surface-background.jpg");
-  background-position: center;
-  background-size: cover;
-  filter: saturate(0.78) blur(1px);
-  transform: scale(1.01);
+  opacity: 0.55;
+  overflow: hidden;
   pointer-events: none;
+}
+
+#vanta-fog canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 body > .wrapper {
@@ -149,10 +145,8 @@ body > .wrapper {
     background-color: #20212b;
   }
 
-  body.auto-dark-mode::before {
-    background-image:
-      linear-gradient(rgba(32, 33, 43, 0.8), rgba(32, 33, 43, 0.8)),
-      url("../img/glass-surface-background.jpg");
+  body.auto-dark-mode #vanta-fog {
+    opacity: 0.42;
   }
 
   body.auto-dark-mode .homepage-content ul > li {
@@ -221,6 +215,10 @@ body > .wrapper {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  #vanta-fog {
+    display: none;
+  }
+
   .homepage-content ul > li {
     transform: none;
     transition:
@@ -231,6 +229,10 @@ body > .wrapper {
 }
 
 @media print {
+  #vanta-fog {
+    display: none;
+  }
+
   .homepage-content ul {
     list-style: disc;
     padding-left: 20px;

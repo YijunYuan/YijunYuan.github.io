@@ -47,6 +47,7 @@
   </script>
   </head>
   <body{% if site.auto_dark_mode %} class="auto-dark-mode"{% endif %}>
+    <div id="vanta-fog" aria-hidden="true"></div>
     <div class="wrapper">
       <header>
         {% if site.avatar %}
@@ -142,6 +143,9 @@
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/reveal-highlight.js" | relative_url }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" integrity="sha384-9EQoUIJYrv09/oYhSxnw1VpLcfPw3BM9dE7+D/3wGUPeLLa7F9Z6OAoD+i/M6FK9" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js" integrity="sha384-6pWFXNNSqb0oVNIZRz63YH5+lolGdFdCh23nHfD7SI3PIW69QAVOvVl/0pkWLG62" crossorigin="anonymous"></script>
+    <script src="{{ "/assets/js/vanta-fog.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
