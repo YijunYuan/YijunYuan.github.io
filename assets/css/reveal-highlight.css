@@ -8,7 +8,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 0;
-  opacity: 0.55;
+  opacity: 0.9;
   overflow: hidden;
   pointer-events: none;
 }
@@ -146,7 +146,7 @@ body > .wrapper {
   }
 
   body.auto-dark-mode #vanta-fog {
-    opacity: 0.42;
+    opacity: 0.48;
   }
 
   body.auto-dark-mode .homepage-content ul > li {

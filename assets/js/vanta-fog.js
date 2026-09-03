@@ -23,16 +23,16 @@
 
     const palette = darkMode
       ? {
-          baseColor: 0x20212b,
-          highlightColor: 0x719ab1,
-          midtoneColor: 0x536f80,
-          lowlightColor: 0x2b3742,
+          baseColor: 0xffebeb,
+          highlightColor: 0xffc300,
+          midtoneColor: 0xff1f00,
+          lowlightColor: 0x2d00ff,
         }
       : {
-          baseColor: 0xf7fafc,
-          highlightColor: 0xd7edf4,
-          midtoneColor: 0xc6dfe8,
-          lowlightColor: 0xaebfcb,
+          baseColor: 0xffebeb,
+          highlightColor: 0xffc300,
+          midtoneColor: 0xff1f00,
+          lowlightColor: 0x2d00ff,
         };
 
     try {
@@ -44,7 +44,7 @@
         minHeight: 200,
         minWidth: 200,
         blurFactor: 0.55,
-        speed: 0.45,
+        speed: 1,
         zoom: 1.1,
         scale: 1,
         scaleMobile: 1.5,
