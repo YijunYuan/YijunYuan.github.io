@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
     
     {% endif %}
-    <link rel="stylesheet" href="{{ "/assets/css/reveal-highlight.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/reveal-highlight.css" | relative_url }}?v={{ site.time | date: '%s' }}">
     <!--KaTeX-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
@@ -142,7 +142,7 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script src="{{ "/assets/js/reveal-highlight.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/reveal-highlight.js" | relative_url }}?v={{ site.time | date: '%s' }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" integrity="sha384-9EQoUIJYrv09/oYhSxnw1VpLcfPw3BM9dE7+D/3wGUPeLLa7F9Z6OAoD+i/M6FK9" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js" integrity="sha384-6pWFXNNSqb0oVNIZRz63YH5+lolGdFdCh23nHfD7SI3PIW69QAVOvVl/0pkWLG62" crossorigin="anonymous"></script>
     <script src="{{ "/assets/js/vanta-fog.js" | relative_url }}"></script>

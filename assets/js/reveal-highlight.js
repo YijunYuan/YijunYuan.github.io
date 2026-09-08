@@ -24,6 +24,20 @@
 
   if (!finePointer.matches || reducedMotion.matches) return;
 
+  let releaseTimer = 0;
+
+  const updateDimmer = () => {
+    window.clearTimeout(releaseTimer);
+    if (document.querySelector(`${CARD_SELECTOR}.is-reveal-focused`)) {
+      document.body.classList.add("is-reveal-dimmed");
+    } else {
+      // Bridge narrow gaps without restarting the fade on the next card.
+      releaseTimer = window.setTimeout(() => {
+        document.body.classList.remove("is-reveal-dimmed");
+      }, 80);
+    }
+  };
+
   document.querySelectorAll(CARD_SELECTOR).forEach((card) => {
     let animationFrame = 0;
     let pointerX = 0;
@@ -71,11 +85,13 @@
 
     const focusCard = () => {
       card.classList.add("is-reveal-focused");
+      updateDimmer();
     };
 
     const releaseCard = () => {
       if (!card.matches(":hover") && !card.matches(":focus-within")) {
         card.classList.remove("is-reveal-focused");
+        updateDimmer();
       }
     };
 

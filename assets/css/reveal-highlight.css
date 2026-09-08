@@ -24,6 +24,22 @@ body > .wrapper {
   z-index: 1;
 }
 
+/* One shared dimmer keeps its opacity when moving between cards. */
+body > .wrapper::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 19;
+  background: rgba(12, 25, 34, 0.15);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease;
+}
+
+body.is-reveal-dimmed > .wrapper::after {
+  opacity: 1;
+}
+
 .homepage-content ul {
   --reveal-hue: 200;
 
@@ -135,7 +151,6 @@ body > .wrapper {
 .homepage-content ul > li.is-reveal-focused {
   z-index: 20;
   box-shadow:
-    0 0 0 100vmax rgba(12, 25, 34, 0.15),
     0 12px 30px hsla(var(--reveal-hue), 58%, 34%, 0.15),
     0 2px 8px hsla(var(--reveal-hue), 58%, 34%, 0.09);
 }
@@ -147,6 +162,10 @@ body > .wrapper {
 
   body.auto-dark-mode #vanta-fog {
     opacity: 0.48;
+  }
+
+  body.auto-dark-mode > .wrapper::after {
+    background: rgba(0, 0, 0, 0.32);
   }
 
   body.auto-dark-mode .homepage-content ul > li {
@@ -198,7 +217,6 @@ body > .wrapper {
 
   body.auto-dark-mode .homepage-content ul > li.is-reveal-focused {
     box-shadow:
-      0 0 0 100vmax rgba(0, 0, 0, 0.32),
       0 14px 32px rgba(0, 0, 0, 0.22),
       0 0 20px hsla(var(--reveal-hue), 82%, 66%, 0.08);
   }
@@ -215,6 +233,10 @@ body > .wrapper {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  body > .wrapper::after {
+    transition: none;
+  }
+
   #vanta-fog {
     display: none;
   }
@@ -229,6 +251,10 @@ body > .wrapper {
 }
 
 @media print {
+  body > .wrapper::after {
+    display: none;
+  }
+
   #vanta-fog {
     display: none;
   }
