@@ -3,7 +3,7 @@ layout: homepage
 ---
 
 ## 👨🏻About Me
-I’m Yijun **Yuan** (**袁** 轶君 in Chinese), a Postdoctoral Fellow at Institute of Theoretical Sciences, Westlake University. I major in algebraic number theory, arithmetic geometry and formalization of mathematics.
+I’m Yijun **Yuan** (**袁** 轶君 in Chinese), a Postdoctoral Fellow at Institute for Theoretical Sciences, Westlake University. I major in algebraic number theory, arithmetic geometry and formalization of mathematics.
 
 ## 🔬Research Interests
 - **$$p$$-adic Galois representations:** especially the theory of $$(\varphi,\Gamma)$$-modules
@@ -13,8 +13,11 @@ I’m Yijun **Yuan** (**袁** 轶君 in Chinese), a Postdoctoral Fellow at Insti
 
 ## 👔Employment
 - 2025.7 - 2027.6 Postdoctoral Fellow\
-Institute of Theoretical Sciences, Westlake University.\
+Institute for Theoretical Sciences, Westlake University.\
 Supervisor: [Huayi Chen](https://chenhuayi.lab.westlake.edu.cn/)
+
+## 📍Professional Position
+- Member, Committee on Mathematics and Artificial Intelligence, Chinese Mathematical Society
 
 ## 🎓Education
 - 2022.9 - 2025.6 Ph.D.\
