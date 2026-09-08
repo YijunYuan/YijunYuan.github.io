@@ -7,19 +7,20 @@ npm ci --prefix scripts
 node scripts/optimize-avatar.mjs /path/to/original-source.glb assets/models/avatar.glb
 ```
 
-The root `model.glb` is now the same cropped, optimized model as the website asset
-and is excluded from the Jekyll build. Use an unprocessed source model when
+The website model is `assets/models/avatar.glb`; no root copy is needed.
+Use an unprocessed source model when
 rerunning the conversion to avoid simplifying an already optimized mesh again.
-The website loads only `assets/models/avatar.glb` (about 465 KiB).
+The website loads only `assets/models/avatar.glb` (about 471 KiB).
 
 The conversion preserves UVs and the base-color/albedo texture, resizes it to
 1024 × 1024 JPEG, removes other PBR maps, reduces the mesh from 1,459,422 to
-63,104 triangles after trimming the right shoulder, and applies Draco geometry compression. The unlit material
+64,659 triangles after trimming and capping the right shoulder, and applies Draco geometry compression. The unlit material
 displays the albedo without specular highlights or added lighting.
 
 The viewer-right shoulder is clipped at local X = 0.34, with UVs interpolated
-along the cut. This removes the extra outer shoulder geometry rather than hiding
-it with a screen-space crop, so the trim follows the model as it turns. Adjust
+along the cut. The discarded outward-facing shoulder surface is flattened onto
+the cut plane to close the opening, retaining its original albedo UVs and fabric
+colors. The cap is part of the mesh and follows the model as it turns. Adjust
 `trimRightShoulder(doc, 0.34)` in the conversion script to change the cut.
 
 `assets/js/avatar-model.js` centers and fits the model automatically. The
