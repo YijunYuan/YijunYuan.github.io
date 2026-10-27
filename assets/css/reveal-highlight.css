@@ -24,22 +24,6 @@ body > .wrapper {
   z-index: 1;
 }
 
-/* One shared dimmer keeps its opacity when moving between cards. */
-body > .wrapper::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 19;
-  background: rgba(12, 25, 34, 0.15);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 160ms ease;
-}
-
-body.is-reveal-dimmed > .wrapper::after {
-  opacity: 1;
-}
-
 .homepage-content ul {
   --reveal-hue: 200;
 
@@ -164,10 +148,6 @@ body.is-reveal-dimmed > .wrapper::after {
     opacity: 0.48;
   }
 
-  body.auto-dark-mode > .wrapper::after {
-    background: rgba(0, 0, 0, 0.32);
-  }
-
   body.auto-dark-mode .homepage-content ul > li {
     background-color: hsla(var(--reveal-hue), 74%, 74%, 0.05);
     background-image: linear-gradient(
@@ -233,10 +213,6 @@ body.is-reveal-dimmed > .wrapper::after {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  body > .wrapper::after {
-    transition: none;
-  }
-
   #vanta-fog {
     display: none;
   }
@@ -251,10 +227,6 @@ body.is-reveal-dimmed > .wrapper::after {
 }
 
 @media print {
-  body > .wrapper::after {
-    display: none;
-  }
-
   #vanta-fog {
     display: none;
   }
