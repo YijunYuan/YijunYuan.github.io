@@ -39,13 +39,13 @@ Advisor: [Guodong Zhou](https://math.ecnu.edu.cn/~gdzhou/intro.html)
 - $$p$$-adic Hahn series with sparse support. Shanwen Wang, **Yijun Yuan***. [arXiv:2607.06944 [math.NT]](https://arxiv.org/abs/2607.06944) [GitHub repo](https://github.com/YijunYuan/FormalizedSparse)
 - Descent of $$(\varphi,\tau)$$-modules in characteristic $$p$$. **Yijun Yuan***. [arXiv:2511.17029 [math.NT]](https://arxiv.org/abs/2511.17029)
 - On the $$p$$-adic transcendence of $$\sum_{k=1}^\infty p^{-1/p^k}$$. Shanwen Wang, **Yijun Yuan***. [arXiv:2509.24609 [math.NT]](https://arxiv.org/abs/2509.24609)
-- Formalization of Harder-Narasimhan theory. **Yijun Yuan***. [arXiv:2509.19632 [math.AG]](https://arxiv.org/abs/2509.19632) [GitHub repo](https://github.com/YijunYuan/HarderNarasimhan)
 - Multivariable period rings of $$p$$-adic false Tate curve extension. **Yijun Yuan***. [arXiv:2505.24064 [math.NT]](https://arxiv.org/abs/2505.24064)
 
 #### Publications
-- Formalization of non-Archimedean functional analysis 1: spherically complete spaces. *Journal of Symbolic Logic*, 2026. **Yijun Yuan***. To appear. [arXiv:2601.21734 [math.NT]](https://arxiv.org/abs/2601.21734) [GitHub repo](https://github.com/YijunYuan/SphericalCompleteness)
+- Formalization of Harder-Narasimhan theory. *Annals of Formalized Mathematics*, 2026. **Yijun Yuan***. To appear. [arXiv:2509.19632 [math.AG]](https://arxiv.org/abs/2509.19632) [GitHub repo](https://github.com/YijunYuan/HarderNarasimhan)
+- Formalization of non-Archimedean functional analysis 1: spherically complete spaces. *Journal of Symbolic Logic*, 2026. **Yijun Yuan***. DOI:[10.1017/jsl.2026.10251](https://doi.org/10.1017/jsl.2026.10251) [GitHub repo](https://github.com/YijunYuan/SphericalCompleteness)
 - Hyper-algebraic invariants of $$p$$-adic algebraic numbers. *Canadian Mathematical Bulletin*, 2026. Shanwen Wang, **Yijun Yuan***. To appear. DOI:[10.4153/S0008439526102252](https://doi.org/10.4153/S0008439526102252)
-- Truncated expansion of $$\zeta_{p^n}$$ in the $$p$$-adic Mal'cev-Neumann field. *Chinese Annals of Mathematics, Series B*, 2026. Shanwen Wang, **Yijun Yuan***. To appear.
+- Truncated expansion of $$\zeta_{p^n}$$ in the $$p$$-adic Mal'cev-Neumann field. *Chinese Annals of Mathematics, Series B*, 2026. Shanwen Wang, **Yijun Yuan***. To appear. [arxiv:2111.07127 [math.NT]](https://arxiv.org/abs/2111.07127)
 - Uniformizer of the false Tate curve extension of $$\mathbb{Q}_p$$ (II). *International Journal of Number Theory*, 2023. Shanwen Wang, **Yijun Yuan***. DOI:[10.1142/S1793042124500015](https://doi.org/10.1142/S1793042124500015)
 - Uniformizer of the false Tate curve extension of $$\mathbb{Q}_p$$. *The Ramanujan Journal*, 2022, 58(2): 549-595. Shanwen Wang, **Yijun Yuan***. DOI:[10.1007/s11139-021-00473-0](https://doi.org/10.1007/s11139-021-00473-0)
 
