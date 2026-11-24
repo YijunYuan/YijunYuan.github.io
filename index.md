@@ -34,9 +34,10 @@ Advisor: [Guodong Zhou](https://math.ecnu.edu.cn/~gdzhou/intro.html)
 
 ## 📓Papers
 #### Preprints
-- Non-liftability of the field of norms of the $$p$$-adic false Tate curve extension. **Yijun Yuan***. [arXiv:2610.35006 [math.NT]](https://arxiv.org/abs/2610.35006) [GitHub repo](https://github.com/YijunYuan/FalseTateNonliftability)
-- The order types of the supports of $$p$$-adic algebraic Hahn series. Shanwen Wang, **Yijun Yuan***. [arXiv:2610.13014 [math.NT]](https://arxiv.org/abs/2610.13014) [GitHub repo](https://github.com/YijunYuan/PAdicOrderType)
-- $$p$$-adic Hahn series with sparse support. Shanwen Wang, **Yijun Yuan***. [arXiv:2607.06944 [math.NT]](https://arxiv.org/abs/2607.06944) [GitHub repo](https://github.com/YijunYuan/FormalizedSparse)
+- On the tensor product of semistable Hermitian adelic vector bundles over an adelic curve. Huayi Chen, **Yijun Yuan***. [arXiv:2611.28474 [math.AG]](https://arxiv.org/abs/2611.28474) <a href="https://github.com/YijunYuan/AdelicBostConjecture" title="GitHub repository" aria-label="GitHub repository: AdelicBostConjecture"><i class="fab fa-github" aria-hidden="true"></i></a>
+- Non-liftability of the field of norms of the $$p$$-adic false Tate curve extension. **Yijun Yuan***. [arXiv:2610.35006 [math.NT]](https://arxiv.org/abs/2610.35006) <a href="https://github.com/YijunYuan/FalseTateNonliftability" title="GitHub repository" aria-label="GitHub repository: FalseTateNonliftability"><i class="fab fa-github" aria-hidden="true"></i></a>
+- The order types of the supports of $$p$$-adic algebraic Hahn series. Shanwen Wang, **Yijun Yuan***. [arXiv:2610.13014 [math.NT]](https://arxiv.org/abs/2610.13014) <a href="https://github.com/YijunYuan/PAdicOrderType" title="GitHub repository" aria-label="GitHub repository: PAdicOrderType"><i class="fab fa-github" aria-hidden="true"></i></a>
+- $$p$$-adic Hahn series with sparse support. Shanwen Wang, **Yijun Yuan***. [arXiv:2607.06944 [math.NT]](https://arxiv.org/abs/2607.06944) <a href="https://github.com/YijunYuan/FormalizedSparse" title="GitHub repository" aria-label="GitHub repository: FormalizedSparse"><i class="fab fa-github" aria-hidden="true"></i></a>
 - Descent of $$(\varphi,\tau)$$-modules in characteristic $$p$$. **Yijun Yuan***. [arXiv:2511.17029 [math.NT]](https://arxiv.org/abs/2511.17029)
 - On the $$p$$-adic transcendence of $$\sum_{k=1}^\infty p^{-1/p^k}$$. Shanwen Wang, **Yijun Yuan***. [arXiv:2509.24609 [math.NT]](https://arxiv.org/abs/2509.24609)
 - Multivariable period rings of $$p$$-adic false Tate curve extension. **Yijun Yuan***. [arXiv:2505.24064 [math.NT]](https://arxiv.org/abs/2505.24064)
